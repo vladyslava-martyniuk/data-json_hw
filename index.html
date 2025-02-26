@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Дз в консолі</h1>
-<script src="index.js"></script>
-</body>
-</html>
+
+    <!DOCTYPE html>
+    <html lang="uk">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student Management App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1>Student Management App</h1>
+      <div>
+        <input id="firstName" placeholder="Ім'я">
+        <input id="lastName" placeholder="Прізвище">
+        <input id="age" placeholder="Вік" type="number">
+        <input id="course" placeholder="Курс">
+        <input id="faculty" placeholder="Факультет">
+        <input id="subjects" placeholder="Курси (через кому)">
+        <button onclick="addStudent()">Додати студента</button>
+      </div>
+      <table id="studentsTable">
+        <thead>
+          <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Вік</th>
+            <th>Курс</th>
+            <th>Факультет</th>
+            <th>Курси</th>
+            <th>Дії</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <script src="index.js"></script>
+    </body>
+    </html>
